@@ -10,8 +10,33 @@
     </style>
   </head>
   <body>
-    	<p class = "titleText">Welcome!</p>
-    	<a href = "https://youtube.com">my Favorite website</a>
-		<img src = "salmonandpasta.jpg" alt = "Salmon and Pasta" style = "height: 300px; float:right;">
+    	<p class = "titleText" onclick = "alert('why did you click this');">Welcome!</p>
+    	
+    	<div id = "result" style = "text-align : center; font-size:30pt;">your number is :   </div>
+   
+    	<P class = "titleText">
+    		<input id = "plusButton" type = "Button" value = "plus" onclick = "plus();"/>
+    		<input id = "minusButton" type = "Button" value = "minus" onclick = "minus();"/>
+    		<input id = "initButton" type = "Button" value = "init" onclick = "init();"/>
+    	</P>
+    	<script>
+    		//alert("50 개의 바이러스가 감지되었습니다. ");
+    		var num = 0;
+    		function plus(){
+    			num += 1;
+    			update();
+    		}
+    		function minus(){
+    			num -= 1;
+    			update();
+    		}
+    		function init(){
+    			num = 0;
+    			update();
+    		}
+    		function update(){
+    			document.getElementById("result").innerHTML = "your number is : "+num;
+    		}
+    	</script>
   </body>
 </html>
