@@ -2,41 +2,40 @@
 <html>
   <head>
     <title>Welcome to yunho's webpage!</title>
+
     <style>
     	.titleText{
     		text-align: center;
     		font-size: 60pt;
     	}
+    	.midTitleText{
+    		text-align: center;
+    		font-size: 40pt;
+    	}
+    	.plainText{
+    		text-align: center;
+    		font-size: 20pt;
+    	}
     </style>
+    
   </head>
   <body>
-    	<p class = "titleText" onclick = "alert('why did you click this');">Welcome!</p>
+    	<p class = "titleText">Welcome!</p>
     	
-    	<div id = "result" style = "text-align : center; font-size:30pt;">your number is :   </div>
-   
-    	<P class = "titleText">
-    		<input id = "plusButton" type = "Button" value = "plus" onclick = "plus();"/>
-    		<input id = "minusButton" type = "Button" value = "minus" onclick = "minus();"/>
-    		<input id = "initButton" type = "Button" value = "init" onclick = "init();"/>
-    	</P>
+    	<p class = "midTitleText">Music</p>
+    	<p class = "plainText">
+    	<a href = "https://www.youtube.com/watch?v=wtSSq7RGp6o&t=26s">Scott Jpolin - The Entertainer</a><br/>
+    	<a href = "https://www.youtube.com/watch?v=fAIyU1hMqO4&feature=youtu.be">Do you hear the people sing piano arrangement</a>
+    	</p>
+    	<p class = "midTitleText">Contact me</p>
+
+   		<p class = "plainText">email : f35jsflove@gmail.com<br/>
+   		<a href = "https://www.instagram.com/yunho0421/">instagram</a><br/>
+   		<a href = "https://www.facebook.com/profile.php?id=100012337741780">facebook</a><br/>
+   		<a href = "https://www.pinterest.co.kr/f35jsflove/_saved/">pinterest</a><br/>
+	   	<a href = "https://musescore.com/user/33715990">musescore</a></p>
+
     	<script>
-    		//alert("50 개의 바이러스가 감지되었습니다. ");
-    		var num = 0;
-    		function plus(){
-    			num += 1;
-    			update();
-    		}
-    		function minus(){
-    			num -= 1;
-    			update();
-    		}
-    		function init(){
-    			num = 0;
-    			update();
-    		}
-    		function update(){
-    			document.getElementById("result").innerHTML = "your number is : "+num;
-    		}
     	</script>
   </body>
 </html>
