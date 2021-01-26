@@ -1,10 +1,8 @@
 <!doctype html>
 <html>
 <head>
-	<title>Cooking</title>
+	<title>Play Gerrymadering</title>
 	<link rel="stylesheet" href="../style.css">
-
-
 </head>
 <body style="background-color : #ff0d7b">
 	<!-- links-->
@@ -12,23 +10,38 @@
 	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-	<p class = "titleText textWhite"><b>Cooking</b></p>
-
-	<p style = "text-align: center">
-		
-
-		
-		<img src = "img/IMG_1766.jpg" style = "height:300px">
-		<img src = "img/IMG_1760.jpg" style = "height:300px"><br/>
-		<img src = "img/IMG_1724.jpg" style = "height:300px">
-		<img src = "img/IMG_1648.jpg" style = "height:300px">
+	<!--Title-->
+	<p class = "titleText textWhite" id = "mainTitle"><b>Play Gerrymadering!</b></p>
 
 
+	<p class = "plainText">
+		Make new Room or enter existing Room : <input type = "text" id = "passwordentry" size = "20pt">
+		<br/><br/><button class = "button" type = "button" onClick = "submitNewRoom();">Go!</button>
 	</p>
-
-	<p class = "plainText"><a href = "https://yunhokim21.github.io">Go Back></a></p>
+	<script>
+		function submitNewRoom() {
+			var passwordentry = document.getElementById("passwordentry");
+			var password = passwordentry.value;
+			alert(password);
+		}
+	</script> 
 	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<p style = "text-align:center;">
+		<br/>
 		<!-- Add font awesome icons -->
 		<a href="https://www.facebook.com/profile.php?id=100012337741780" class="fa fa-facebook"></a>
 		<a href="https://www.instagram.com/yunho0421/" class = "fa fa-instagram"></a>
@@ -37,10 +50,20 @@
 		<a href="https://github.com/YunhoKim21" class = "fa fa-github"></a>
 	</p>
 	<script>
-		let colors = ["#0057ff", "#484d5c", "#ff0d7b", "#674b7c", "#ff3627", "#864aff", "#5b1ee1", "#000000"]
+		let colors = ["#0057ff", "#484d5c", "#ff0d7b", "#674b7c", "#ff3627", "#864aff", "#5b1ee1"]
 		var i = Math.floor(Math.random() * colors.length)
 		var color = colors[i];
 		document.body.style.backgroundColor = color;
 	</script>
-	</body>
-	</html>
+
+	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.2.4/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
+</html>

@@ -2,89 +2,25 @@
 <html>
 <head>
 	<title>Yunho's Personal Webpage!</title>
-
-	<style>
-		.textWhite{
-			color:#ffffff;
-		}
-		.titleText{
-			text-align: center;
-			font-size: 60pt;
-
-			font-family: 'Quicksand', sans-serif;
-			font-weight: 300;
-		}
-		.midTitleText{
-			text-align: center;
-			font-size: 40pt;
-			font-family: 'Quicksand', sans-serif;
-			font-weight: 300;
-		}
-		.plainText{
-			text-align: center;
-			font-size: 20pt;
-			font-family: 'Quicksand', sans-serif;
-			font-weight: 300;
-		}
-		/* Style all font awesome icons */
-		.fa {
-			align: center;
-			padding: 20px;
-			font-size: 30px;
-			width: 50px;
-			text-align: center;
-			text-decoration: none;
-		}
-
-		/* Add a hover effect if you want */
-		.fa:hover {
-			opacity: 0.7;
-		}
-
-		/* Set a specific color for each brand */
-
-		/* Facebook */
-		.fa-facebook {
-			background: #3B5998;
-			color: white;
-		}
-
-		.fa-instagram{
-			background: #125688;
-			color: white;
-		}
-		.fa-youtube{
-			background: #bb0000;
-			color:white;
-		}
-		.fa-pinterest{
-			background: #cb2027;
-			color: white;
-		}
-		.fa-github{
-			background: #000000;
-			color:white;
-		}
-	</style>
+	<link rel="stylesheet" href="style.css">
 
 </head>
-<body style="background-color : #ff0d7b" id = "demo">
+<body style="background-color : #ff0d7b">
 
 	<!-- links-->
 	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet">
 
 
-
+	<div id = "content">
 	<!--Title-->
-	<p class = "titleText textWhite"><b>Welcome!</b></p>
+	<p class = "titleText textWhite" id = "mainTitle"><b>Welcome!</b></p>
 	<p class ="midTitleText textWhite" style ="font-size: 30pt"><br/><br/>This is Yunho Kim's</br><b>self - made</b></br> personal website<br/><br/></p>
 	<!--Music-->
 	<p class = "midTitleText textWhite">Music</p>
 	<p class = "plainText textWhite">
 		<iframe width="420" height = "270" src="https://www.youtube.com/embed/wtSSq7RGp6o"></iframe>
-		<iframe width="420" height = "270" src="https://www.youtube.com/embed/fAIyU1hMqO4"></iframe>
+		
 	</p>
 
 	<!--ArtWorks-->
@@ -106,9 +42,19 @@
 		<img src = "img/parynoole.jpg" style = "height:300px">
 	</p>
 	<p class = "plainText"><a href = "https://yunhokim21.github.io/cooking">See More></a></p>
-	<p class = "midTitleText textWhite">Contact me</p>
+	
+
+
+	<!--Coding-->
+	<p class = "midTitleText textWhite">Coding</p>
+	<p class = "plainText textWhite">
+		<iframe width="420" height = "270" src="https://www.youtube.com/embed/wELzF4JlrSo"></iframe>
+	</p>
+	<p class = "plainText textWhite"><a href = "https://github.com/YunhoKim21">Github for more works></a></p>
+	<p class = "plainText textWhite"><a href = "https://yunhokim21.github.io/gerrymadering">play self-made game "gerrymadering"></a></p>
 
 	<!-- bottom bar -->
+	<p class = "midTitleText textWhite">Contact me</p>
 	<p style = "text-align:center;">
 		<!-- Add font awesome icons -->
 		<a href="https://www.facebook.com/profile.php?id=100012337741780" class="fa fa-facebook"></a>
@@ -119,10 +65,12 @@
 	</p>
 
 	<p class = "plainText textWhite">email : f35jsflove@gmail.com<br/></p>	
-
+</div>
 	<script>
-		let colors = ["#0057ff", "#484d5c", "#ff0d7b", "#674b7c", "#ff3627", "#864aff", "#5b1ee1", "#000000"]
-		var color = colors[Math.floor(Math.random() * colors.length)];
+		let colors = ["#0057ff", "#484d5c", "#ff0d7b", "#674b7c", "#ff3627", "#864aff", "#5b1ee1"]
+		
+		var i = Math.floor(Math.random() * colors.length)
+		var color = colors[i];
 		document.body.style.backgroundColor = color;
 	</script>
 </body>
